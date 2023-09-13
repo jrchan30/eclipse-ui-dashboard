@@ -18,7 +18,7 @@ const ListItem = ({ icon, label, children, to }: ListItem) => {
     className: `${icon?.props?.className} w-6 h-auto icon`,
   });
   return (
-    <Link href={to ?? '/'} className="flex gap-x-4 items-center">
+    <Link href={to ?? '/'} className="flex gap-x-4 items-center py-1.5">
       <div>{styledIcon}</div>
       <div className="text-g8 font-medium">{label}</div>
     </Link>
@@ -31,7 +31,7 @@ const NavigationList = ({ list }: IProps) => {
       return <ListItem key={item.id} {...item} />;
     });
   };
-  return <div className="flex flex-col">{renderList()}</div>;
+  return <div className="flex flex-col gap-y-5">{renderList()}</div>;
 };
 
 export default NavigationList;

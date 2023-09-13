@@ -4,6 +4,27 @@ import type { Config } from 'tailwindcss';
 // module.exports = {
 // };
 
+export enum Colors {
+  azure = '#0062FF',
+  'spring-green' = '#62F783',
+  amethyst = '#A162F7',
+  'mango-tango' = '#FF8743',
+  'zinc-yellow' = '#FFF736',
+  'persian-blue' = '#4807EA',
+  'sea-green' = '#15FFAB',
+  magenta = '#E80FE9',
+  'strawberry-red' = '#DB3031',
+  'dark-amber' = '#FE7E07',
+  'alizarin-red' = '#FD4438',
+  'frosty-sky' = '#06D7F6',
+  'wild-strawberry' = '#FF5CAA',
+  verdepom = '#24CA49',
+  'shiny-orange' = '#FFB443',
+  thistle = '#C2B7CD',
+  'red-orange' = '#FF7A2F',
+  aquamarine = '#3DD598',
+}
+
 const config: Config = {
   darkMode: ['class'],
   content: [
